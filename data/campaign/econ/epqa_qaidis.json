@@ -1,0 +1,91 @@
+{
+	"starSystem":"epqa_qaidis",
+	"markets":[	
+		{
+			"entities":["epqa_epqa_planet"],
+			"faction":"EpqaBrotherhood",
+			"size":7,
+			"startingConditions":[
+				"population_7",
+				"farmland_rich",
+				"ore_moderate",
+				"habitable",
+				"cold",
+			],
+			"industries":[
+				"population",
+				"megaport",
+				"waystation",
+				"mining",
+				"farming",
+				"grounddefenses",
+				"militarybase",
+				"battlestation_high",
+				"patrolhq",
+			],			
+		},
+		{
+			"entities":["epqa_forge_planet"],
+			"faction":"EpqaBrotherhood",
+			"size":5,
+			"startingConditions":[
+				"population_5",
+				"rare_ore_abundant",
+				"ore_abundant",
+				"hot",
+				"low_gravity",
+			],
+			"industries":[
+				"population",
+				"megaport",
+				"grounddefenses",
+				"mining",
+				"refining",
+				["orbitalworks", "corrupted_nanoforge"],
+				"orbitalstation",
+			],
+		},
+		{
+			"entities":["epqa_nebulae_planet"],
+			"faction":"EpqaBrotherhood",
+			"size":4,
+			"startingConditions":[
+				"population_4",
+				"ore_moderate",
+				"volatiles_plentiful",
+				"very_cold",
+			],
+			"industries":[
+				"population",
+				"spaceport",
+				"mining",
+				"grounddefenses",
+				"fuelprod",
+			],
+		},
+		{
+			"entities":["epqa_milita_planet"],
+			"faction":"EpqaBrotherhood",
+			"size":3,
+			"startingConditions":[
+				"population_3",
+				"ore_moderate",
+				"rare_ore_moderate",
+				"low_gravity",
+				"no_atmosphere",
+			],
+			"industries":[
+				"population",
+				"megaport",
+				"grounddefenses",
+				"highcommand",
+				"battlestation",
+			],
+		},
+	],
+
+
+}
+
+
+

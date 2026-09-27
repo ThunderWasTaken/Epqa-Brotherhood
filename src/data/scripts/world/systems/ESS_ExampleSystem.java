@@ -47,7 +47,7 @@ public class ESS_ExampleSystem implements SectorGeneratorPlugin { //A SectorGene
 
         //add first planet
         PlanetAPI epqaplanet = system.addPlanet( //assigns instance of newly created planet to variable planetOne
-                "epqa_epqaplanet", //unique id string
+                "epqa_epqa_planet", //unique id string
                 star, //orbit focus for planet
                 "Epqa", //display name of planet
                 "tundra", //planet type id, comes from starsector-core/data/campaign/procgen/planet_gen_data.csv
@@ -58,7 +58,7 @@ public class ESS_ExampleSystem implements SectorGeneratorPlugin { //A SectorGene
         );
 
         PlanetAPI forgeplanet = system.addPlanet( //assigns instance of newly created planet to variable planetOne
-                "forge_planet", //unique id string
+                "epqa_forge_planet", //unique id string
                 star, //orbit focus for planet
                 "Forge", //display name of planet
                 "lava", //planet type id, comes from starsector-core/data/campaign/procgen/planet_gen_data.csv
@@ -70,7 +70,7 @@ public class ESS_ExampleSystem implements SectorGeneratorPlugin { //A SectorGene
         );
 
         PlanetAPI nebulaeplanet = system.addPlanet( //assigns instance of newly created planet to variable planetOne
-                "nebulae_planet", //unique id string
+                "epqa_nebulae_planet", //unique id string
                 star, //orbit focus for planet
                 "Nebulae", //display name of planet
                 "frozen", //planet type id, comes from starsector-core/data/campaign/procgen/planet_gen_data.csv
@@ -82,7 +82,7 @@ public class ESS_ExampleSystem implements SectorGeneratorPlugin { //A SectorGene
         );
 
         PlanetAPI militaplanet = system.addPlanet( //assigns instance of newly created planet to variable planetOne
-                "Milita_planet", //unique id string
+                "epqa_Milita_planet", //unique id string
                 star, //orbit focus for planet
                 "Milita", //display name of planet
                 "barren", //planet type id, comes from starsector-core/data/campaign/procgen/planet_gen_data.csv
@@ -94,7 +94,7 @@ public class ESS_ExampleSystem implements SectorGeneratorPlugin { //A SectorGene
         );
 
         PlanetAPI holerockplanet = system.addPlanet( //assigns instance of newly created planet to variable planetOne
-                "holerock_planet", //unique id string
+                "epqa_holerock_planet", //unique id string
                 star, //orbit focus for planet
                 "Holerock", //display name of planet
                 "barren-bombarded", //planet type id, comes from starsector-core/data/campaign/procgen/planet_gen_data.csv
@@ -103,128 +103,6 @@ public class ESS_ExampleSystem implements SectorGeneratorPlugin { //A SectorGene
                 2000, //100 radius gap from the outer randomly generated entity created above
                 120 //number of in-game days for it to orbit once
 
-        );
-
-        //use helper method from other script to easily configure the market. feel free to copy it into your own project
-        MarketAPI EpqaMarketplace = ESS_AddMarketplace.addMarketplace( //A Market is separate to a Planet, and contains data about population, industries and conditions. This is a method from the other script in this mod, that will assign all marketplace conditions to the planet in one go, making it simple and easy
-                "EpqaBrotherhood",//Factions.INDEPENDENT references the id String of the Independent faction, so it is the same as writing "independent", but neater. This determines the Faction associated with this market
-                epqaplanet, //the PlanetAPI variable that this market will be assigned to
-                null, //some mods and vanilla will have additional floating space stations or other entities, that when accessed, will open this marketplace. We don't have any associated entities for this method to add, so we leave null
-                "Epqa", //Display name of market
-                7, //population size
-                new ArrayList<>(Arrays.asList( //List of conditions for this method to iterate through and add to the market
-                        Conditions.FARMLAND_RICH,
-                        Conditions.POPULATION_7,
-                        Conditions.ORE_MODERATE,
-                        Conditions.HABITABLE,
-                        Conditions.COLD
-                )),
-                new ArrayList<>(Arrays.asList( //list of submarkets for this method to iterate through and add to the market. if a military base industry was added to this market, it would be consistent to add a military submarket too
-                        Submarkets.SUBMARKET_OPEN, //add a default open market
-                        Submarkets.SUBMARKET_STORAGE, //add a player storage market
-                        Submarkets.SUBMARKET_BLACK //add a black market
-                )),
-                new ArrayList<>(Arrays.asList( //list of industries for this method to iterate through and add to the market
-                        Industries.POPULATION, //population industry is required for weirdness to not happen
-                        Industries.MEGAPORT, //same with spaceport
-                        Industries.MINING,
-                        Industries.FARMING,
-                        Industries.GROUNDDEFENSES,
-                        Industries.WAYSTATION,
-                        Industries.BATTLESTATION_HIGH,
-                        Industries.PATROLHQ
-                )),
-                true, //if true, the planet will have visual junk orbiting and will play an ambient chatter audio track when the player is nearby
-                false //used by the method to make a market hidden like a pirate base, not recommended for generating markets in a core world
-        );
-
-        MarketAPI ForgeMarketplace = ESS_AddMarketplace.addMarketplace( //A Market is separate to a Planet, and contains data about population, industries and conditions. This is a method from the other script in this mod, that will assign all marketplace conditions to the planet in one go, making it simple and easy
-                "EpqaBrotherhood",//Factions.INDEPENDENT references the id String of the Independent faction, so it is the same as writing "independent", but neater. This determines the Faction associated with this market
-                forgeplanet, //the PlanetAPI variable that this market will be assigned to
-                null, //some mods and vanilla will have additional floating space stations or other entities, that when accessed, will open this marketplace. We don't have any associated entities for this method to add, so we leave null
-                "Forge", //Display name of market
-                5, //population size
-                new ArrayList<>(Arrays.asList( //List of conditions for this method to iterate through and add to the market
-                        Conditions.RARE_ORE_ABUNDANT,
-                        Conditions.POPULATION_5,
-                        Conditions.ORE_ABUNDANT,
-                        Conditions.LOW_GRAVITY,
-                        Conditions.HOT
-                )),
-                new ArrayList<>(Arrays.asList( //list of submarkets for this method to iterate through and add to the market. if a military base industry was added to this market, it would be consistent to add a military submarket too
-                        Submarkets.SUBMARKET_OPEN, //add a default open market
-                        Submarkets.SUBMARKET_STORAGE, //add a player storage market
-                        Submarkets.SUBMARKET_BLACK //add a black market
-                )),
-                new ArrayList<>(Arrays.asList( //list of industries for this method to iterate through and add to the market
-                        Industries.POPULATION, //population industry is required for weirdness to not happen
-                        Industries.MEGAPORT, //same with spaceport
-                        Industries.MINING,
-                        Industries.REFINING,
-                        Industries.GROUNDDEFENSES,
-                        Industries.WAYSTATION,
-                        Industries.ORBITALWORKS,
-                        Industries.ORBITALSTATION
-                )),
-                true, //if true, the planet will have visual junk orbiting and will play an ambient chatter audio track when the player is nearby
-                false //used by the method to make a market hidden like a pirate base, not recommended for generating markets in a core world
-        );
-
-        MarketAPI NebulaeMarketplace = ESS_AddMarketplace.addMarketplace( //A Market is separate to a Planet, and contains data about population, industries and conditions. This is a method from the other script in this mod, that will assign all marketplace conditions to the planet in one go, making it simple and easy
-                "EpqaBrotherhood",//Factions.INDEPENDENT references the id String of the Independent faction, so it is the same as writing "independent", but neater. This determines the Faction associated with this market
-                nebulaeplanet, //the PlanetAPI variable that this market will be assigned to
-                null, //some mods and vanilla will have additional floating space stations or other entities, that when accessed, will open this marketplace. We don't have any associated entities for this method to add, so we leave null
-                "Nebulae", //Display name of market
-                4, //population size
-                new ArrayList<>(Arrays.asList( //List of conditions for this method to iterate through and add to the market
-                        Conditions.ORE_MODERATE,
-                        Conditions.POPULATION_4,
-                        Conditions.VOLATILES_PLENTIFUL,
-                        Conditions.VERY_COLD
-                )),
-                new ArrayList<>(Arrays.asList( //list of submarkets for this method to iterate through and add to the market. if a military base industry was added to this market, it would be consistent to add a military submarket too
-                        Submarkets.SUBMARKET_OPEN, //add a default open market
-                        Submarkets.SUBMARKET_STORAGE, //add a player storage market
-                        Submarkets.SUBMARKET_BLACK //add a black market
-                )),
-                new ArrayList<>(Arrays.asList( //list of industries for this method to iterate through and add to the market
-                        Industries.POPULATION, //population industry is required for weirdness to not happen
-                        Industries.MEGAPORT, //same with spaceport
-                        Industries.MINING,
-                        Industries.GROUNDDEFENSES,
-                        Industries.FUELPROD
-                )),
-                true, //if true, the planet will have visual junk orbiting and will play an ambient chatter audio track when the player is nearby
-                false //used by the method to make a market hidden like a pirate base, not recommended for generating markets in a core world
-        );
-
-        MarketAPI MilitaMarketplace = ESS_AddMarketplace.addMarketplace( //A Market is separate to a Planet, and contains data about population, industries and conditions. This is a method from the other script in this mod, that will assign all marketplace conditions to the planet in one go, making it simple and easy
-                "EpqaBrotherhood",//Factions.INDEPENDENT references the id String of the Independent faction, so it is the same as writing "independent", but neater. This determines the Faction associated with this market
-                militaplanet, //the PlanetAPI variable that this market will be assigned to
-                null, //some mods and vanilla will have additional floating space stations or other entities, that when accessed, will open this marketplace. We don't have any associated entities for this method to add, so we leave null
-                "Milita", //Display name of market
-                3, //population size
-                new ArrayList<>(Arrays.asList( //List of conditions for this method to iterate through and add to the market
-                        Conditions.ORE_MODERATE,
-                        Conditions.POPULATION_3,
-                        Conditions.RARE_ORE_MODERATE,
-                        Conditions.LOW_GRAVITY,
-                        Conditions.NO_ATMOSPHERE
-                )),
-                new ArrayList<>(Arrays.asList( //list of submarkets for this method to iterate through and add to the market. if a military base industry was added to this market, it would be consistent to add a military submarket too
-                        Submarkets.SUBMARKET_OPEN, //add a default open market
-                        Submarkets.SUBMARKET_STORAGE, //add a player storage market
-                        Submarkets.SUBMARKET_BLACK //add a black market
-                )),
-                new ArrayList<>(Arrays.asList( //list of industries for this method to iterate through and add to the market
-                        Industries.POPULATION, //population industry is required for weirdness to not happen
-                        Industries.MEGAPORT, //same with spaceport
-                        Industries.GROUNDDEFENSES,
-                        Industries.HIGHCOMMAND,
-                        Industries.BATTLESTATION
-                )),
-                true, //if true, the planet will have visual junk orbiting and will play an ambient chatter audio track when the player is nearby
-                false //used by the method to make a market hidden like a pirate base, not recommended for generating markets in a core world
         );
 
         holerockplanet.getMarket().addCondition(Conditions.METEOR_IMPACTS);
