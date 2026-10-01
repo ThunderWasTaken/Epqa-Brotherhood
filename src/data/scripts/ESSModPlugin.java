@@ -10,3 +10,4 @@ public class ESSModPlugin extends BaseModPlugin { //very basic mod plugin used t
         new ESS_WorldGen().generate(Global.getSector());
     }
 }
+
