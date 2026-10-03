@@ -1,7 +1,7 @@
 {
 	id:"EpqaBrotherhood",
-	"color":[30,104,153,255],
-	"baseUIColor":[30,104,153,200],
+	"color":[63,145,189,255],
+	"baseUIColor":[63,145,189,200],
 	"darkUIColor":[20,22,31,175],
 	"gridUIColor":[38,44,75,75],
 	"displayName":"Epqa Brotherhood",

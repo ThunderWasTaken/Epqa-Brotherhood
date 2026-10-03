@@ -25,7 +25,7 @@ public class ESS_ExampleSystem implements SectorGeneratorPlugin { //A SectorGene
 
         //set up star
         PlanetAPI star = system.initStar( //stars and planets are technically the same category of object, so stars use PlanetAPI
-                "eqpa_qaidis", //set star id, this should be unique
+                "epqa_qaidis", //set star id, this should be unique
                 "star_orange", //set star type, the type IDs come from starsector-core/data/campaign/procgen/star_gen_data.csv
                 900, //set radius, 900 is a typical radius size
                 15000, //sets the location of the star's one-way jump point in hyperspace, since it is the center of the star system, we want it to be in the center of the star system jump points in hyperspace
@@ -295,6 +295,16 @@ public class ESS_ExampleSystem implements SectorGeneratorPlugin { //A SectorGene
         );
         //assign orbit
         navBuoy.setCircularOrbit(star, 180f, 3000f, 1500f);
+
+        //uhhh idk man this is manual jump points
+        JumpPointAPI qaidisjumpPoint = Global.getFactory().createJumpPoint(
+                "qaidisjumppoint",
+                "Qaidis Jump Point");
+
+        qaidisjumpPoint.setCircularOrbit(system.getEntityById("epqa_qaidis"), 2, 3750, 4000f); //the second one is the distance from the center btw
+        qaidisjumpPoint.setStandardWormholeToHyperspaceVisual();
+
+        system.addEntity(qaidisjumpPoint);
 
         //autogenerate jump points that will appear in hyperspace and in system
         system.autogenerateHyperspaceJumpPoints(true, true);

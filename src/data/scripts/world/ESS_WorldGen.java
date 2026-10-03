@@ -4,6 +4,7 @@ import com.fs.starfarer.api.campaign.SectorAPI;
 import com.fs.starfarer.api.campaign.SectorGeneratorPlugin;
 import data.scripts.world.systems.ESS_ExampleSystem;
 import data.scripts.world.systems.epqa_solarissa;
+import data.scripts.world.systems.epqa_noire;
 
 public class ESS_WorldGen implements SectorGeneratorPlugin {
     //this script will be used to do campaign generation for this mod. typically used to set up faction relationships, spawn multiple systems etc.
@@ -11,5 +12,6 @@ public class ESS_WorldGen implements SectorGeneratorPlugin {
     public void generate(SectorAPI sector) {
         new ESS_ExampleSystem().generate(sector);
         new epqa_solarissa().generate(sector);
+        new epqa_noire().generate(sector);
     }
 }
