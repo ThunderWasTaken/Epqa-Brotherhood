@@ -1,0 +1,157 @@
+{
+  "hullName": "Gemini (EQ)",
+  "hullId": "epqa_gemini_EQ",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/epqa_gemini_EQ.png",
+  "style": "MIDLINE",
+  "height": 160,
+  "width": 140,
+  "center": [70, 80],
+  "collisionRadius": 96.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 88.5,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 45,
+      "arc": 90,
+      "id": "WS0001",
+      "locations": [46.5, 30],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -45,
+      "arc": 90,
+      "id": "WS0002",
+      "locations": [46.5, -31],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -44.5,
+      "arc": 180,
+      "id": "WS0003",
+      "locations": [-37.5, -46],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 45,
+      "arc": 180,
+      "id": "WS0004",
+      "locations": [-37.5, 44],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0005",
+      "locations": [47, -1],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 179,
+      "arc": 0,
+      "id": "WS0006",
+      "locations": [-9.5, -27],
+      "mount": "HIDDEN",
+      "size": "MEDIUM",
+      "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": 180,
+      "arc": 0,
+      "id": "WS0007",
+      "locations": [-10, 24.5],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    }
+  ],
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [-77.5, -29.5],
+      "style": "LOW_TECH",
+      "width": 10
+    },
+    {
+      "angle": 180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [-79, -20.5],
+      "style": "LOW_TECH",
+      "width": 10
+    },
+    {
+      "angle": 180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [-76.5, -12],
+      "style": "LOW_TECH",
+      "width": 10
+    },
+    {
+      "angle": 180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [-78, 10],
+      "style": "LOW_TECH",
+      "width": 10
+    },
+    {
+      "angle": 180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [-78, 18.5],
+      "style": "LOW_TECH",
+      "width": 10
+    },
+    {
+      "angle": 180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [-77, 27.5],
+      "style": "LOW_TECH",
+      "width": 10
+    }
+  ],
+  "bounds": [
+    -61.5, 6.5,
+    -79, 7.5,
+    -77.5, 37,
+    -62.5, 45.5,
+    -57, 63.5,
+    -33.5, 70,
+    -13.5, 60.5,
+    -8.5, 36.5,
+    9.5, 53.5,
+    50.5, 54,
+    76.5, 29,
+    76, 11,
+    52.5, 10.5,
+    52.5, -10.5,
+    76, -11,
+    76.5, -29,
+    50.5, -54,
+    9.5, -53.5,
+    -8.5, -36.5,
+    -13.5, -60.5,
+    -33.5, -70,
+    -57, -63.5,
+    -62.5, -45.5,
+    -77.5, -37,
+    -79, -7.5,
+    -61.5, -6.5
+  ]
+}

@@ -36,6 +36,7 @@
 		"hulls":{
 			"aurora":0.5,
 			"sunder":0.5,
+			"epqa_burghley":1.5,
 		},
 	},
 	# ships the faction gets access to when importing S&W out-of-faction
@@ -45,12 +46,12 @@
 		],
 	},
 	"knownShips":{
-		"tags":[],
+		"tags":[epqa],
 		"hulls":[
 			"ox",
 			"phaeton",
 			"prometheus",
-			"gemini",
+			"epqa_gemini_EQ",
 			"nebula",
 			"starliner",
 			"buffalo",
@@ -67,6 +68,7 @@
 			"enforcer",
 			"shrike",
 			
+			"epqa_burghley",
 			"falcon",
 			"eagle",
 			"eradicator",

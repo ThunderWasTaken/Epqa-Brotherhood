@@ -1,0 +1,131 @@
+{
+  "hullName": "Burghley",
+  "hullId": "epqa_burghley",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/epqa_burghley.png",
+  "style": "MIDLINE",
+  "height": 218,
+  "width": 168,
+  "center": [84, 109],
+  "collisionRadius": 95,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 90,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0001",
+      "locations": [75, 0],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 90,
+      "id": "WS0002",
+      "locations": [35, 0],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 90,
+      "id": "WS0003",
+      "locations": [10, 0],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0004",
+      "locations": [17, -23],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0005",
+      "locations": [17, 23],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": -90,
+      "arc": 180,
+      "id": "WS0006",
+      "locations": [-56, -22],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 90,
+      "arc": 180,
+      "id": "WS0007",
+      "locations": [-56, 22],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    }
+  ],
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [-76, 12],
+      "style": "LOW_TECH",
+      "width": 10
+    },
+    {
+      "angle": -180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [-76, -12],
+      "style": "LOW_TECH",
+      "width": 10
+    },
+    {
+      "angle": 180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [-76.5, 0],
+      "style": "LOW_TECH",
+      "width": 10
+    }
+  ],
+  "bounds": [
+    85.5, -8,
+    71.5, -8,
+    49.5, -16,
+    25, -18,
+    25, -27,
+    18, -32,
+    3, -32,
+    -2.5, -19.5,
+    -25.5, -36.5,
+    -68, -46.5,
+    -69, -21.5,
+    -78.5, -16,
+    -78.5, 16,
+    -69, 21.5,
+    -68, 46.5,
+    -25.5, 36.5,
+    -2.5, 19.5,
+    3, 32,
+    18, 32,
+    25, 27,
+    25, 18,
+    49.5, 16,
+    71.5, 8,
+    85.5, 8
+  ]
+}
