@@ -1,0 +1,66 @@
+{
+  "variantId": "epqa_kalashnikov_Deathray",
+  "hullId": "epqa_kalashnikov",
+  "displayName": "Deathray",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 36,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "advancedoptics",
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0011": "hveldriver",
+        "WS0012": "hveldriver"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0013": "salamanderpod",
+        "WS0014": "salamanderpod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "hil",
+        "WS0004": "hil",
+        "WS0015": "hil"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "taclaser",
+        "WS0010": "taclaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "pdlaser",
+        "WS0002": "pdlaser",
+        "WS0005": "lightmg",
+        "WS0006": "lightmg",
+        "WS0007": "flak",
+        "WS0008": "flak"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "broadsword_wing",
+    "longbow_wing"
+  ]
+}

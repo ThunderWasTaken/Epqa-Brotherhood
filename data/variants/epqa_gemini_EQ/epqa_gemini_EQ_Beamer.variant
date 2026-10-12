@@ -1,10 +1,10 @@
 {
-  "variantId": "epqa_gemini_EQ_variant",
+  "variantId": "epqa_gemini_EQ_Beamer",
   "hullId": "epqa_gemini_EQ",
-  "displayName": "New Variant",
+  "displayName": "Beamer",
   "goalVariant": true,
-  "fluxCapacitors": 4,
-  "fluxVents": 10,
+  "fluxCapacitors": 11,
+  "fluxVents": 15,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
@@ -13,20 +13,31 @@
   ],
   "weaponGroups": [
     {
-      "autofire": false,
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "gravitonbeam",
+        "WS0004": "gravitonbeam"
+      }
+    },
+    {
+      "autofire": true,
       "mode": "LINKED",
       "weapons": {
         "WS0001": "taclaser",
-        "WS0002": "taclaser",
-        "WS0003": "gravitonbeam",
-        "WS0004": "gravitonbeam",
+        "WS0002": "taclaser"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
         "WS0005": "harpoonpod"
       }
     }
   ],
   "modules": [],
   "wings": [
-    "longbow_wing",
     "broadsword_wing"
   ]
 }

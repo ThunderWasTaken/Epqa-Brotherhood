@@ -1,32 +1,38 @@
 {
-  "variantId": "epqa_gemini_EQ_variant",
+  "variantId": "epqa_gemini_EQ_Standard",
   "hullId": "epqa_gemini_EQ",
-  "displayName": "New Variant",
+  "displayName": "Standard",
   "goalVariant": true,
   "fluxCapacitors": 10,
-  "fluxVents": 11,
+  "fluxVents": 2,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
     "hardenedshieldemitter",
-    "expanded_deck_crew"
+    "expanded_deck_crew",
+    "converted_hangar"
   ],
   "weaponGroups": [
     {
-      "autofire": false,
+      "autofire": true,
       "mode": "LINKED",
       "weapons": {
         "WS0001": "lightmg",
         "WS0002": "lightmg",
         "WS0003": "flak",
         "WS0004": "flak",
-        "WS0005": "pilum"
+        "WS0005": "salamanderpod"
       }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
     }
   ],
   "modules": [],
   "wings": [
-    "longbow_wing",
-    "broadsword_wing"
+    "broadsword_wing",
+    "longbow_wing"
   ]
 }

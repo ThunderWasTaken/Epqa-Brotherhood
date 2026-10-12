@@ -1,7 +1,7 @@
 {
-  "variantId": "epqa_burghley_variant",
+  "variantId": "epqa_burghley_Standard",
   "hullId": "epqa_burghley",
-  "displayName": "New Variant",
+  "displayName": "Standard",
   "goalVariant": true,
   "fluxCapacitors": 9,
   "fluxVents": 15,
@@ -16,15 +16,15 @@
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "heavymauler"
+        "WS0001": "heavymauler",
+        "WS0003": "heavyneedler"
       }
     },
     {
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0002": "lightneedler",
-        "WS0003": "heavyneedler"
+        "WS0002": "lightneedler"
       }
     },
     {
