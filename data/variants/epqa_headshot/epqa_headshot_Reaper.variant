@@ -1,0 +1,32 @@
+{
+  "variantId": "epqa_headshot_Reaper",
+  "hullId": "epqa_headshot",
+  "displayName": "Reaper",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 5,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "hardenedshieldemitter",
+    "safetyoverrides"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "typhoon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "lightdualmg"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

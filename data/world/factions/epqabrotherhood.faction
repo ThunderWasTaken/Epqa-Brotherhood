@@ -98,7 +98,7 @@
 		],
 	},
 	"knownWeapons":{
-		"tags":["ind", "independent", "persean", "sindrian_diktat"],
+		"tags":["ind", "independent", "persean", "mercenary"],
 		"weapons":[
 			"gorgon",
 			"gorgonpod",
@@ -145,7 +145,7 @@
 		],
 	},
 	"knownHullMods":{
-		"tags":["standard", "ind", "independent", "persean", "sindrian_diktat"],
+		"tags":["standard", "ind", "independent", "persean", "mercenary"],
 		"hullMods":[
 		],
 	},
@@ -247,6 +247,16 @@
 			"graphics/portraits/portrait46.png",			
 #			"graphics/portraits/characters/old_spacer01.png",
 		],
+	},
+	"ranks":{
+		"factionLeader":{"name":"High Governor"},
+	},
+	"posts":{
+		"factionLeader":{"name":"High Governor"},
+		
+		"administrator":{"name":"Governor"},
+		"militaryAdministrator":{"name":"Governor"},
+		},
 	},
 	"voices":{
 		"LOW":{

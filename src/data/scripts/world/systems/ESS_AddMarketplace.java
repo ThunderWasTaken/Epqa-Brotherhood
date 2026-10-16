@@ -22,10 +22,11 @@ public class ESS_AddMarketplace {
             Boolean WithJunkAndChatter,
             Boolean PirateMode) {
         EconomyAPI globalEconomy = Global.getSector().getEconomy();
-        String planetID = primaryEntity.getId();
-        String marketID = planetID + "market";
+        String planetID = primaryEntity.getId(); //gets entity id, not needed to be a planet specifically
+        String marketID = planetID + "_market"; //create string to use for market id by combining entity id and _market,
+        //e.g lets say entity id is "banana" resulting market id will be "banana_market".
 
-        MarketAPI newMarket = Global.getFactory().createMarket(marketID, name, size);
+        MarketAPI newMarket = Global.getFactory().createMarket(marketID, name, size); //This is where market gets created and market id is assigned
         newMarket.setFactionId(factionID);
         newMarket.setPrimaryEntity(primaryEntity);
         newMarket.getTariff().modifyFlat("generator", newMarket.getFaction().getTariffFraction());

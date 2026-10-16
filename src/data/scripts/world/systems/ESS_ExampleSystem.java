@@ -9,7 +9,6 @@ import com.fs.starfarer.api.impl.campaign.procgen.StarAge;
 import com.fs.starfarer.api.impl.campaign.procgen.StarSystemGenerator;
 import com.fs.starfarer.api.impl.campaign.terrain.HyperspaceTerrainPlugin;
 import com.fs.starfarer.api.util.Misc;
-import org.lwjgl.util.vector.Vector2f;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -106,7 +105,7 @@ public class ESS_ExampleSystem implements SectorGeneratorPlugin { //A SectorGene
         );
 
         //use helper method from other script to easily configure the market. feel free to copy it into your own project
-        MarketAPI EpqaMarket = ESS_AddMarketplace.addMarketplace( //A Market is separate to a Planet, and contains data about population, industries and conditions. This is a method from the other script in this mod, that will assign all marketplace conditions to the planet in one go, making it simple and easy
+        MarketAPI Epqa_Market = ESS_AddMarketplace.addMarketplace( //A Market is separate to a Planet, and contains data about population, industries and conditions. This is a method from the other script in this mod, that will assign all marketplace conditions to the planet in one go, making it simple and easy
                 "EpqaBrotherhood", //Factions.INDEPENDENT references the id String of the Independent faction, so it is the same as writing "independent", but neater. This determines the Faction associated with this market
                 epqaplanet, //the PlanetAPI variable that this market will be assigned to
                 null, //some mods and vanilla will have additional floating space stations or other entities, that when accessed, will open this marketplace. We don't have any associated entities for this method to add, so we leave null
@@ -117,7 +116,8 @@ public class ESS_ExampleSystem implements SectorGeneratorPlugin { //A SectorGene
                         Conditions.FARMLAND_RICH,
                         Conditions.ORE_MODERATE,
                         Conditions.HABITABLE,
-                        Conditions.COLD
+                        Conditions.COLD,
+                        Conditions.ESTABLISHED_POLITY
                 )),
                 new ArrayList<>(Arrays.asList( //list of submarkets for this method to iterate through and add to the market. if a military base industry was added to this market, it would be consistent to add a military submarket too
                         Submarkets.SUBMARKET_OPEN, //add a default open market
@@ -130,8 +130,9 @@ public class ESS_ExampleSystem implements SectorGeneratorPlugin { //A SectorGene
                         Industries.WAYSTATION,
                         Industries.FARMING,
                         Industries.COMMERCE,
+                        Industries.MINING,
                         Industries.HEAVYBATTERIES,
-                        Industries.PATROLHQ,
+                        Industries.HIGHCOMMAND,
                         Industries.BATTLESTATION_HIGH
                 )),
                 true, //if true, the planet will have visual junk orbiting and will play an ambient chatter audio track when the player is nearby
@@ -139,7 +140,7 @@ public class ESS_ExampleSystem implements SectorGeneratorPlugin { //A SectorGene
         );
 
         //use helper method from other script to easily configure the market. feel free to copy it into your own project
-        MarketAPI ForgeMarket = ESS_AddMarketplace.addMarketplace( //A Market is separate to a Planet, and contains data about population, industries and conditions. This is a method from the other script in this mod, that will assign all marketplace conditions to the planet in one go, making it simple and easy
+        MarketAPI Forge_Market = ESS_AddMarketplace.addMarketplace( //A Market is separate to a Planet, and contains data about population, industries and conditions. This is a method from the other script in this mod, that will assign all marketplace conditions to the planet in one go, making it simple and easy
                 "EpqaBrotherhood", //Factions.INDEPENDENT references the id String of the Independent faction, so it is the same as writing "independent", but neater. This determines the Faction associated with this market
                 forgeplanet, //the PlanetAPI variable that this market will be assigned to
                 null, //some mods and vanilla will have additional floating space stations or other entities, that when accessed, will open this marketplace. We don't have any associated entities for this method to add, so we leave null
@@ -150,7 +151,8 @@ public class ESS_ExampleSystem implements SectorGeneratorPlugin { //A SectorGene
                         Conditions.RARE_ORE_ABUNDANT,
                         Conditions.ORE_ABUNDANT,
                         Conditions.LOW_GRAVITY,
-                        Conditions.HOT
+                        Conditions.HOT,
+                        Conditions.ESTABLISHED_POLITY
                 )),
                 new ArrayList<>(Arrays.asList( //list of submarkets for this method to iterate through and add to the market. if a military base industry was added to this market, it would be consistent to add a military submarket too
                         Submarkets.SUBMARKET_OPEN, //add a default open market
@@ -171,11 +173,11 @@ public class ESS_ExampleSystem implements SectorGeneratorPlugin { //A SectorGene
                 false //used by the method to make a market hidden like a pirate base, not recommended for generating markets in a core world
         );
 
-        var industry = ForgeMarket.getIndustry(Industries.ORBITALWORKS); //you'll need to add the industries
+        var industry = Forge_Market.getIndustry(Industries.ORBITALWORKS); //you'll need to add the industries
         industry.setSpecialItem(new SpecialItemData("corrupted_nanoforge", "")); //then this adds the items
 
         //use helper method from other script to easily configure the market. feel free to copy it into your own project
-        MarketAPI NebulaeMarket = ESS_AddMarketplace.addMarketplace( //A Market is separate to a Planet, and contains data about population, industries and conditions. This is a method from the other script in this mod, that will assign all marketplace conditions to the planet in one go, making it simple and easy
+        MarketAPI Nebulae_Market = ESS_AddMarketplace.addMarketplace( //A Market is separate to a Planet, and contains data about population, industries and conditions. This is a method from the other script in this mod, that will assign all marketplace conditions to the planet in one go, making it simple and easy
                 "EpqaBrotherhood", //Factions.INDEPENDENT references the id String of the Independent faction, so it is the same as writing "independent", but neater. This determines the Faction associated with this market
                 nebulaeplanet, //the PlanetAPI variable that this market will be assigned to
                 null, //some mods and vanilla will have additional floating space stations or other entities, that when accessed, will open this marketplace. We don't have any associated entities for this method to add, so we leave null
@@ -185,7 +187,8 @@ public class ESS_ExampleSystem implements SectorGeneratorPlugin { //A SectorGene
                         Conditions.POPULATION_4,
                         Conditions.VOLATILES_PLENTIFUL,
                         Conditions.ORE_MODERATE,
-                        Conditions.VERY_COLD
+                        Conditions.VERY_COLD,
+                        Conditions.ESTABLISHED_POLITY
                 )),
                 new ArrayList<>(Arrays.asList( //list of submarkets for this method to iterate through and add to the market. if a military base industry was added to this market, it would be consistent to add a military submarket too
                         Submarkets.SUBMARKET_OPEN, //add a default open market
@@ -204,7 +207,7 @@ public class ESS_ExampleSystem implements SectorGeneratorPlugin { //A SectorGene
         );
 
         //use helper method from other script to easily configure the market. feel free to copy it into your own project
-        MarketAPI MilitaMarket = ESS_AddMarketplace.addMarketplace( //A Market is separate to a Planet, and contains data about population, industries and conditions. This is a method from the other script in this mod, that will assign all marketplace conditions to the planet in one go, making it simple and easy
+        MarketAPI Milita_Market = ESS_AddMarketplace.addMarketplace( //A Market is separate to a Planet, and contains data about population, industries and conditions. This is a method from the other script in this mod, that will assign all marketplace conditions to the planet in one go, making it simple and easy
                 "EpqaBrotherhood", //Factions.INDEPENDENT references the id String of the Independent faction, so it is the same as writing "independent", but neater. This determines the Faction associated with this market
                 militaplanet, //the PlanetAPI variable that this market will be assigned to
                 null, //some mods and vanilla will have additional floating space stations or other entities, that when accessed, will open this marketplace. We don't have any associated entities for this method to add, so we leave null
@@ -215,7 +218,8 @@ public class ESS_ExampleSystem implements SectorGeneratorPlugin { //A SectorGene
                         Conditions.RARE_ORE_MODERATE,
                         Conditions.ORE_MODERATE,
                         Conditions.LOW_GRAVITY,
-                        Conditions.NO_ATMOSPHERE
+                        Conditions.NO_ATMOSPHERE,
+                        Conditions.ESTABLISHED_POLITY
                 )),
                 new ArrayList<>(Arrays.asList( //list of submarkets for this method to iterate through and add to the market. if a military base industry was added to this market, it would be consistent to add a military submarket too
                         Submarkets.SUBMARKET_OPEN, //add a default open market

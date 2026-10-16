@@ -1,0 +1,46 @@
+{
+  "variantId": "epqa_starliner_EQ_Standard",
+  "hullId": "epqa_starliner_EQ",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 11,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "hardenedshieldemitter",
+    "expanded_deck_crew"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "hellbore"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "hveldriver"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "lightmg",
+        "WS0003": "lightmg",
+        "WS0006": "lightmg",
+        "WS0007": "lightmg",
+        "WS0009": "flak"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "broadsword_wing",
+    "longbow_wing"
+  ]
+}

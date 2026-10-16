@@ -1,0 +1,38 @@
+{
+  "variantId": "epqa_starliner_EQ_Beamer",
+  "hullId": "epqa_starliner_EQ",
+  "displayName": "Beamer",
+  "goalVariant": true,
+  "fluxCapacitors": 14,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "advancedoptics"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "hil"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "taclaser",
+        "WS0003": "taclaser",
+        "WS0008": "gravitonbeam",
+        "WS0009": "gravitonbeam"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "broadsword_wing",
+    "longbow_wing"
+  ]
+}

@@ -80,7 +80,7 @@ public class epqa_noire implements SectorGeneratorPlugin { //A SectorGeneratorPl
         );
 
         //use helper method from other script to easily configure the market. feel free to copy it into your own project
-        MarketAPI FantomeMarket = ESS_AddMarketplace.addMarketplace( //A Market is separate to a Planet, and contains data about population, industries and conditions. This is a method from the other script in this mod, that will assign all marketplace conditions to the planet in one go, making it simple and easy
+        MarketAPI Fantome_Market = ESS_AddMarketplace.addMarketplace( //A Market is separate to a Planet, and contains data about population, industries and conditions. This is a method from the other script in this mod, that will assign all marketplace conditions to the planet in one go, making it simple and easy
                 "EpqaBrotherhood", //Factions.INDEPENDENT references the id String of the Independent faction, so it is the same as writing "independent", but neater. This determines the Faction associated with this market
                 fantomeplanet, //the PlanetAPI variable that this market will be assigned to
                 null, //some mods and vanilla will have additional floating space stations or other entities, that when accessed, will open this marketplace. We don't have any associated entities for this method to add, so we leave null
@@ -92,7 +92,8 @@ public class epqa_noire implements SectorGeneratorPlugin { //A SectorGeneratorPl
                         Conditions.ORE_MODERATE,
                         Conditions.RARE_ORE_MODERATE,
                         Conditions.VERY_COLD,
-                        Conditions.POOR_LIGHT
+                        Conditions.POOR_LIGHT,
+                        Conditions.ESTABLISHED_POLITY
                 )),
                 new ArrayList<>(Arrays.asList( //list of submarkets for this method to iterate through and add to the market. if a military base industry was added to this market, it would be consistent to add a military submarket too
                         Submarkets.SUBMARKET_OPEN, //add a default open market
@@ -114,7 +115,7 @@ public class epqa_noire implements SectorGeneratorPlugin { //A SectorGeneratorPl
         fantomeplanet.getMarket().setFreePort(true);
 
         //use helper method from other script to easily configure the market. feel free to copy it into your own project
-        MarketAPI VestigeMarket = ESS_AddMarketplace.addMarketplace( //A Market is separate to a Planet, and contains data about population, industries and conditions. This is a method from the other script in this mod, that will assign all marketplace conditions to the planet in one go, making it simple and easy
+        MarketAPI Vestige_Market = ESS_AddMarketplace.addMarketplace( //A Market is separate to a Planet, and contains data about population, industries and conditions. This is a method from the other script in this mod, that will assign all marketplace conditions to the planet in one go, making it simple and easy
                 "EpqaBrotherhood", //Factions.INDEPENDENT references the id String of the Independent faction, so it is the same as writing "independent", but neater. This determines the Faction associated with this market
                 frostbiteplanet, //the PlanetAPI variable that this market will be assigned to
                 null, //some mods and vanilla will have additional floating space stations or other entities, that when accessed, will open this marketplace. We don't have any associated entities for this method to add, so we leave null
@@ -127,7 +128,8 @@ public class epqa_noire implements SectorGeneratorPlugin { //A SectorGeneratorPl
                         Conditions.RARE_ORE_RICH,
                         Conditions.VERY_COLD,
                         Conditions.POOR_LIGHT,
-                        Conditions.TECTONIC_ACTIVITY
+                        Conditions.TECTONIC_ACTIVITY,
+                        Conditions.ESTABLISHED_POLITY
                 )),
                 new ArrayList<>(Arrays.asList( //list of submarkets for this method to iterate through and add to the market. if a military base industry was added to this market, it would be consistent to add a military submarket too
                         Submarkets.SUBMARKET_OPEN, //add a default open market

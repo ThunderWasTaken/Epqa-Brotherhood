@@ -1,0 +1,141 @@
+{
+  "hullName": "Starliner (EQ)",
+  "hullId": "epqa_starliner_EQ",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/epqa_starliner_EQ.png",
+  "style": "MIDLINE",
+  "height": 305,
+  "width": 126,
+  "center": [63, 152.5],
+  "collisionRadius": 163.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 159.5,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0001",
+      "locations": [134, 0],
+      "mount": "HARDPOINT",
+      "size": "LARGE",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 90,
+      "arc": 180,
+      "id": "WS0002",
+      "locations": [64.5, 47],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -90,
+      "arc": 180,
+      "id": "WS0003",
+      "locations": [64.5, -47],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 90,
+      "arc": 180,
+      "id": "WS0004",
+      "locations": [-31.5, 46],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -90,
+      "arc": 180,
+      "id": "WS0005",
+      "locations": [-31.5, -46],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 90,
+      "arc": 180,
+      "id": "WS0006",
+      "locations": [-92.5, 37],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -90,
+      "arc": 180,
+      "id": "WS0007",
+      "locations": [-92.5, -37],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 90,
+      "id": "WS0008",
+      "locations": [95, 0],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 90,
+      "id": "WS0009",
+      "locations": [68, 0],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "HYBRID"
+    }
+  ],
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [-147.5, -18.5],
+      "style": "MIDLINE",
+      "width": 10
+    },
+    {
+      "angle": -180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [-147.5, 18.5],
+      "style": "MIDLINE",
+      "width": 10
+    },
+    {
+      "angle": -180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [-147.5, 0.5],
+      "style": "MIDLINE",
+      "width": 10
+    }
+  ],
+  "bounds": [
+    -149, -26.5,
+    -123.5, -51.5,
+    -77.5, -43.5,
+    -33.5, -57,
+    84, -60,
+    89, -44,
+    120, -17.5,
+    150, -17.5,
+    150, 17.5,
+    120, 17.5,
+    89, 44,
+    84, 60,
+    -33.5, 57,
+    -77.5, 43.5,
+    -123.5, 51.5,
+    -149, 26.5
+  ]
+}

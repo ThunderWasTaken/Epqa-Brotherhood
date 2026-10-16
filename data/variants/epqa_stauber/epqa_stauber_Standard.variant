@@ -1,0 +1,51 @@
+{
+  "variantId": "epqa_stauber_Standard",
+  "hullId": "epqa_stauber",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "hardenedshieldemitter",
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "heavymauler"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "reaper",
+        "WS0004": "reaper"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "railgun",
+        "WS0002": "railgun",
+        "WS0008": "hveldriver"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "lightmg",
+        "WS0007": "lightmg",
+        "WS0009": "lightmg"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

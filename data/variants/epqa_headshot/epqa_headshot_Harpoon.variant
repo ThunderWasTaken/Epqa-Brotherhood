@@ -1,0 +1,32 @@
+{
+  "variantId": "epqa_headshot_Harpoon",
+  "hullId": "epqa_headshot",
+  "displayName": "Harpoon",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 5,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "hardenedshieldemitter",
+    "safetyoverrides"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "harpoonpod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "lightdualmg"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,139 @@
+{
+  "hullName": "Stauber",
+  "hullId": "epqa_stauber",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/epqa_stauber.png",
+  "style": "LOW_TECH",
+  "height": 150,
+  "width": 80,
+  "center": [40, 75],
+  "collisionRadius": 82.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 78,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 90,
+      "id": "WS0001",
+      "locations": [54, -10],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -0,
+      "arc": 90,
+      "id": "WS0002",
+      "locations": [54, 10],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0003",
+      "locations": [50, -30],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0004",
+      "locations": [50, 30],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0005",
+      "locations": [67, 0],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -45,
+      "arc": 180,
+      "id": "WS0006",
+      "locations": [29, -17],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 45,
+      "arc": 180,
+      "id": "WS0007",
+      "locations": [29, 17],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 90,
+      "id": "WS0008",
+      "locations": [-15, 0],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 180,
+      "arc": 270,
+      "id": "WS0009",
+      "locations": [-41, 0],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    }
+  ],
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [-72, 15],
+      "style": "LOW_TECH",
+      "width": 10
+    },
+    {
+      "angle": -180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [-72, -15],
+      "style": "LOW_TECH",
+      "width": 10
+    },
+    {
+      "angle": 180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [-70, 7],
+      "style": "LOW_TECH",
+      "width": 10
+    },
+    {
+      "angle": -180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [-70, -7],
+      "style": "LOW_TECH",
+      "width": 10
+    }
+  ],
+  "bounds": [
+    -73.5, 30.5,
+    50.5, 37,
+    64.5, 18,
+    64.5, -18,
+    50.5, -37,
+    -73.5, -30.5
+  ]
+}
